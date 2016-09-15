@@ -22,7 +22,7 @@ def encrypt(text, shift):
     earray = []
     myarray = list(text)
     for x in myarray:
-        a = (ord(x) + shift)
+        a = (ord(x) + (shift % const.alphabet))
         if a > ord('Z'):
             a = (a % ord('Z')) + 64
         b = chr(a)
