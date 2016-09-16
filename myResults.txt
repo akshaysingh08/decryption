@@ -6,6 +6,7 @@ calculate the shift is the difference between the ascii value of the most
 frequent letter and the ascii value of 'E'.
 
 Table of Characters and the frequency count.
+
 	('V', 7)
 	('D', 7)
 	('R', 6)
@@ -32,3 +33,13 @@ Table of Characters and the frequency count.
 	('J', 0)
 	('C', 0)
 	('A', 0)
+
+The analysis shows that the Letter 'V' and 'D' are the most frequent
+characters in the cypher text. As an attempt to decipher the text I  will 
+assume the character 'V' in the cipher represents the character 'E' in 
+plain text. Which results in a shift of 17, (ord('V') - ord('E')). The 
+following string is the result of the cypher text being run in the decrypt 
+function with a shift of 17. 
+
+
+MAYFYFGQMAMTMDKTRQZEZARTYPFXEXNBFYTYEXKKMEEEMGBDAFAUDNKTXUEQRQKTQUQKUWMZAOUXZ

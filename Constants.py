@@ -10,9 +10,14 @@ intro = 'myResults.txt displays the frequency of each character in the cipher te
         'calculate the shift is the difference between the ascii value of the most \n' \
         'frequent letter and the ascii value of \'E\'.\n' \
         '\n' \
-        'Table of Characters and the frequency count.\n'
+        'Table of Characters and the frequency count.\n\n'
 
-explain = ''
+explain = '\nThe analysis shows that the Letter \'V\' and \'D\' are the most frequent\n' \
+          'characters in the cypher text. As an attempt to decipher the text I  will \n' \
+          'assume the character \'V\' in the cipher represents the character \'E\' in \n' \
+          'plain text. Which results in a shift of 17, (ord(\'V\') - ord(\'E\')). The \n' \
+          'following string is the result of the cypher text being run in the decrypt \n' \
+          'function with a shift of 17. \n\n'
 
 alphabet = 26
 

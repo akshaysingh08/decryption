@@ -42,8 +42,14 @@ def frequency():
 
 
 def decipher():
+    """
+    Appends more information to the 'myResults.txt' file
+    :return:
+    """
     plaintext = Caesar.decrypt(frequency())
-    print plaintext
+    with open('myResults.txt', 'a') as f:
+        f.write('\n' + plaintext + '\n')
+    f.close()
 
 
 

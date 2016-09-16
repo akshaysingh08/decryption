@@ -1,4 +1,3 @@
-from pycipher import Caesar
 import Constants as const
 
 
@@ -47,10 +46,4 @@ def decrypt(shift):
         erray.append(b)
     return ''.join(erray)
 
-# print (encrypt(text, 1))
 
-# text = 'AAAAAZZZZZZZ'
-
-# print(Caesar(key=1).encipher(text))
-
-#print (Caesar(key=21).decipher(const.cipherText))
