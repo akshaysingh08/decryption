@@ -11,6 +11,7 @@ import operator
 def displayresults(mylist, shift):
     """
     Creates a text file and displays the occurrence of each character in the cypher text.
+    :param shift:
     :param mylist:
     :return: myResults.txt
     """
@@ -49,9 +50,8 @@ def decipher():
     plaintext = Caesar.decrypt(frequency())
     with open('myResults.txt', 'a') as f:
         f.write('\n' + plaintext + '\n')
+
     f.close()
-
-
 
 
 decipher()

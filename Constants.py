@@ -3,6 +3,9 @@
 ##############################################################################
 
 cipherText = 'DRPWPWXHDRDKDUBKIHQVQRIKPGWOVOESWPKPVOBBDVVVDXSURWRLUEBKOLVHIHBKHLHBLNDQRFLOQ'
+
+cipher17 = 'MAYFYFGQMAMTMDKTRQZEZARTYPFXEXNBFYTYEXKKMEEEMGBDAFAUDNKTXUEQRQKTQUQKUWMZAOUXZ'
+
 intro = 'myResults.txt displays the frequency of each character in the cipher text.\n' \
         'The most frequent letter in cipher text will represent the letter \'E\'. In\n' \
         'English, the letter \'E\' is the most common character in the alphabet. This\n' \
