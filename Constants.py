@@ -22,6 +22,13 @@ explain = '\nThe analysis shows that the Letter \'V\' and \'D\' are the most fre
           'following string is the result of the cypher text being run in the decrypt \n' \
           'function with a shift of 17. \n\n'
 
+columnintro = 'Function segment rearranges the cipher-text by splitting the text into subsections.\n' \
+            'The size of the subsections is dependent of the key value. For example, if the key length \n' \
+            'is 7 then the string is divided into seven pieces. Then the function, permutation is\n' \
+            'responsible for shuffling all possible combinations of the subsections and saving them\n' \
+            'into a dictionary. Next the merge function concatenates the subsections resulting in a plaintext.\n\n' \
+              '\t Column Combination \t\t\t Plain Text\n\n' \
+
 alphabet = 26
 
 
