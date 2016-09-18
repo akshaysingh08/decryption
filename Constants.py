@@ -23,11 +23,26 @@ explain = '\nThe analysis shows that the Letter \'V\' and \'D\' are the most fre
           'function with a shift of 17. \n\n'
 
 columnintro = 'Function segment rearranges the cipher-text by splitting the text into subsections.\n' \
-            'The size of the subsections is dependent of the key value. For example, if the key length \n' \
-            'is 7 then the string is divided into seven pieces. Then the function, permutation is\n' \
-            'responsible for shuffling all possible combinations of the subsections and saving them\n' \
-            'into a dictionary. Next the merge function concatenates the subsections resulting in a plaintext.\n\n' \
+              'The size of the subsections is dependent of the key value. For example, if the key length \n' \
+              'is 7 then the string is divided into seven pieces. Then the function, permutation is\n' \
+              'responsible for shuffling all possible combinations of the subsections and saving them\n' \
+              'into a dictionary. Next the merge function concatenates the subsections resulting in a plaintext.\n\n' \
               '\t Column Combination \t\t\t Plain Text\n\n' \
+
+dictintro = 'The results of Dictionary analysis from each string. Each string is reference with the 100 \n' \
+            'most common word in English, https://en.wikipedia.org/wiki/Most_common_words_in_English ,\n ' \
+            'The table below is display as follow: \n' \
+            'ITERATION \tCOMMON WORD COUNT\t PERMUTATION \t\t TEXT\n\n' \
+            ''
+
+
+commonwords = ['THE', 'BE', 'TO', 'OF', 'AND', 'A', 'IN', 'THAT', 'HAVE', 'I', 'IT', 'FOR', 'NOT',
+                'ON', 'WITH', 'HE', 'AS', 'YOU', 'DO', 'AT', 'THIS', 'BY', 'FROM', 'THEY', 'WE',
+                'SAY', 'HER', 'SHE', 'OR', 'AN', 'WILL', 'MY', 'ONE', 'ALL', 'WOULD', 'THERE',
+                'THEIR', 'WHAT', 'SO', 'UP', 'OUT', 'IF', 'ABOUT', 'WHO', 'GET', 'WHICH', 'GO', 'ME',
+                'WHEN', 'MAKE', 'CAN', 'LIKE', 'TIME', 'NO', 'JUST', 'HIM', 'KNOW', 'TAKE',
+                'PEOPLE', 'INTO', 'YEAR', 'YOUR', 'GOOD', 'SOME', 'COULD', 'THEM', 'SEE', 'OTHER',
+                'THAN', 'THEN', 'NOW', 'LOOK', 'ONLY', 'COME', 'ITS', 'OVER', 'THINK', 'ALSO']
 
 alphabet = 26
 
@@ -37,4 +52,3 @@ def getdictionary():
     for x in range(ord('A'), ord('[')):
         mydict[chr(x)] = 0
     return mydict
-

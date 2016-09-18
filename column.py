@@ -31,8 +31,8 @@ def segment(cipher, key):
             newList = [cipher[x]]
     newDict[column] = word
     results = permutations(newDict, key)
-    #print results
     displayresults(results)
+    return results
 
 
 def permutations(myDict, key):
@@ -92,4 +92,4 @@ def displayresults(mylist):
 
     f.close()
 
-segment(const.cipher17, 7)
+#segment(const.cipher17, 7)
