@@ -27,16 +27,11 @@ def countwords(mydict):
             if isinstance(r, tuple):
                 for a in r:
                     f.write('\t\t' + str(a))
-            else:
-                f.write('\t' + str(r) + '\t')
+            #else:
+            #    f.write('\t' + str(r) + '\t')
         f.write('\n')
-
     f.close()
 
 
-
-
-
-
-
+#countwords(column.segment(const.cipher_1, 7))
 countwords(column.segment(const.cipher17, 7))

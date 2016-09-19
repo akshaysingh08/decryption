@@ -6,6 +6,8 @@ cipherText = 'DRPWPWXHDRDKDUBKIHQVQRIKPGWOVOESWPKPVOBBDVVVDXSURWRLUEBKOLVHIHBKHL
 
 cipher17 = 'MAYFYFGQMAMTMDKTRQZEZARTYPFXEXNBFYTYEXKKMEEEMGBDAFAUDNKTXUEQRQKTQUQKUWMZAOUXZ'
 
+cipher_1 = 'ESQXQXYIESELEVCLJIRWRSJLQHXPWPFTXQLQWPCCEWWWEYTVSXSMVFCLPMWIJICLIMICMOERSGMPR'
+
 intro = 'myResults.txt displays the frequency of each character in the cipher text.\n' \
         'The most frequent letter in cipher text will represent the letter \'E\'. In\n' \
         'English, the letter \'E\' is the most common character in the alphabet. This\n' \
@@ -32,7 +34,7 @@ columnintro = 'Function segment rearranges the cipher-text by splitting the text
 dictintro = 'The results of Dictionary analysis from each string. Each string is reference with the 100 \n' \
             'most common word in English, https://en.wikipedia.org/wiki/Most_common_words_in_English ,\n ' \
             'The table below is display as follow: \n' \
-            'ITERATION \tCOMMON WORD COUNT\t PERMUTATION \t\t TEXT\n\n' \
+            'COMMON WORD COUNT\t PERMUTATION \t\t\t TEXT\n\n' \
             ''
 
 
