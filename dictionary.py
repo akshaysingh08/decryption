@@ -32,6 +32,6 @@ def countwords(mydict):
         f.write('\n')
     f.close()
 
-
-#countwords(column.segment(const.cipher_1, 7))
-countwords(column.segment(const.cipher17, 7))
+countwords(column.segment(const.cipher2, 7))
+#countwords(column.segment(const.cipher13, 7))
+#countwords(column.segment(const.cipher17, 7))

@@ -47,5 +47,5 @@ def decrypt(shift):
     return ''.join(erray)
 
 
-# mystring = decrypt(-1)
-# print mystring
+mystring = decrypt(25)
+print mystring
