@@ -4,13 +4,6 @@
 
 cipherText = 'DRPWPWXHDRDKDUBKIHQVQRIKPGWOVOESWPKPVOBBDVVVDXSURWRLUEBKOLVHIHBKHLHBLNDQRFLOQ'
 
-cipher2 = 'BPNUNUVFBPBIBSZIGFOTOPGINEUMTMCQUNINTMZZBTTTBVQSPUPJSCZIMJTFGFZIFJFZJLBOPDJMO'
-cipher6 = 'XLJQJQRBXLXEXOVECBKPKLCEJAQIPIYMQJEJPIVVXPPPXRMOLQLFOYVEIFPBCBVEBFBVFHXKLZFIK'
-cipher13 = 'QECJCJKUQEQXQHOXVUDIDEVXCTJBIBRFJCXCIBOOQIIIQKFHEJEYHROXBYIUVUOXUYUOYAQDESYBD'
-cipher17 = 'MAYFYFGQMAMTMDKTRQZEZARTYPFXEXNBFYTYEXKKMEEEMGBDAFAUDNKTXUEQRQKTQUQKUWMZAOUXZ'
-cipher21 = 'IWUBUBCMIWIPIZGPNMVAVWNPULBTATJXBUPUATGGIAAAICXZWBWQZJGPTQAMNMGPMQMGQSIVWKQTV'
-cipher_1 = 'ESQXQXYIESELEVCLJIRWRSJLQHXPWPFTXQLQWPCCEWWWEYTVSXSMVFCLPMWIJICLIMICMOERSGMPR'
-
 intro = 'myResults.txt displays the frequency of each character in the cipher text.\n' \
         'The most frequent letter in cipher text will represent the letter \'E\'. In\n' \
         'English, the letter \'E\' is the most common character in the alphabet. This\n' \
@@ -34,26 +27,9 @@ columnintro = 'Function segment rearranges the cipher-text by splitting the text
               'into a dictionary. Next the merge function concatenates the subsections resulting in a plaintext.\n\n' \
               '\t Column Combination \t\t\t Plain Text\n\n' \
 
-dictintro = 'The results of Dictionary analysis from each string. Each string is reference with the 100 \n' \
-            'most common word in English, https://en.wikipedia.org/wiki/Most_common_words_in_English ,\n ' \
-            'The table below is display as follow: \n' \
+dictintro = 'The results of Dictionary analysis from each string at key-length 5. Each string is crossed reference with popular_words.py  \n' \
+            'and count is kept of many words are in the text and only the highest word count from each shift is displayed down below ,\n ' \
             'COMMON WORD COUNT\t PERMUTATION \t\t\t TEXT\n\n' \
             ''
 
-
-commonwords = ['THE', 'BE', 'TO', 'OF', 'AND', 'A', 'IN', 'THAT', 'HAVE', 'I', 'IT', 'FOR', 'NOT',
-                'ON', 'WITH', 'HE', 'AS', 'YOU', 'DO', 'AT', 'THIS', 'BY', 'FROM', 'THEY', 'WE',
-                'SAY', 'HER', 'SHE', 'OR', 'AN', 'WILL', 'MY', 'ONE', 'ALL', 'WOULD', 'THERE',
-                'THEIR', 'WHAT', 'SO', 'UP', 'OUT', 'IF', 'ABOUT', 'WHO', 'GET', 'WHICH', 'GO', 'ME',
-                'WHEN', 'MAKE', 'CAN', 'LIKE', 'TIME', 'NO', 'JUST', 'HIM', 'KNOW', 'TAKE',
-                'PEOPLE', 'INTO', 'YEAR', 'YOUR', 'GOOD', 'SOME', 'COULD', 'THEM', 'SEE', 'OTHER',
-                'THAN', 'THEN', 'NOW', 'LOOK', 'ONLY', 'COME', 'ITS', 'OVER', 'THINK', 'ALSO']
-
 alphabet = 26
-
-
-def getdictionary():
-    mydict = {}
-    for x in range(ord('A'), ord('[')):
-        mydict[chr(x)] = 0
-    return mydict

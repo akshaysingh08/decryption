@@ -46,6 +46,3 @@ def decrypt(shift):
         erray.append(b)
     return ''.join(erray)
 
-
-mystring = decrypt(25)
-print mystring
