@@ -30,6 +30,6 @@ for i in range(1, 27):
         countwords(segment(cyphertext, key), i)
 
 #####################################################################################
-# End of File, look into 'dictionaryResults.txt' and 'columnResults.txt'
+# End of File, look into 'dictionaryResults.txt' & 'columnResults.txt'
 # for results. I will go in more detail in report.
 #####################################################################################
